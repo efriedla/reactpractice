@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Calculator from './Calculator/Calculator';
+import TickTackToe from './TickTackToe/TickTackToe';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Calculator />
+        <TickTackToe/>
       </div>
     );
   }

@@ -6,5 +6,7 @@
 * Crash Course
 npm install --save uuid
  -this will give your projects new ids
+ * install jquery : npm install --save jquery
  * * Json placeholder: https://jsonplaceholder.typicode.com/
- * video:
+
+ * video:https://www.youtube.com/watch?v=A71aqufiNtQ

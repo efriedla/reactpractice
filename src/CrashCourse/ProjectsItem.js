@@ -4,13 +4,21 @@ import './Course.css';
 
 
 export default class ProjectsItem extends Component {
-  
+  deleteProject(id){
+      this.props.onDelete(id);
+  }
         
   render() { 
-      //here is where 
+      //the delete will get pushed up two componentes
     return (
       <li className='Project'>
-        {this.props.project.title} - {this.props.project.category}
+        {this.props.project.title}
+         - 
+        {this.props.project.category}
+         <a href='#' 
+            onClick={this.deleteProject.bind(this, this.props.project.id)}>
+                 X 
+        </a>
 
       </li>
     );

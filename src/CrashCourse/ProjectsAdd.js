@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Course.css';
 // import List from './List';
+import uuid from 'uuid';
 
 
 export default class ProjectsAdd extends Component {
@@ -20,6 +21,7 @@ export default class ProjectsAdd extends Component {
         alert('title is required');
     } else{
         this.setState({newProject:{
+            id: uuid.v4(),
             title: this.refs.title.value,
             category: this.refs.category.value
         }}, function(){
@@ -34,7 +36,7 @@ export default class ProjectsAdd extends Component {
     });
     return (
       <div>
-          <h3>add</h3>
+          <h3>add new project</h3>
           <form onSubmit={this.handleSubmit.bind(this)}>
               <div>
                   <label>Title</label><br/>

@@ -5,7 +5,9 @@ import ProjectsItem from './ProjectsItem';
 
 
 export default class Projects extends Component {
-  
+  deleteProject(id){
+      this.props.onDelete(id)
+  }
         
   render() {
     //   console.log(this.props);
@@ -16,13 +18,14 @@ export default class Projects extends Component {
       projectItems = this.props.projects.map(project => {
         //console.log(projects);
         return (
-            <ProjectsItem key={project.title} project={project} />
+            <ProjectsItem onDelete={this.deleteProject.bind(this)} key={project.title} project={project} />
         );
       });
     }
     return (
       <div className='projects'>
        <h1>My projects</h1>
+       <h4>projects</h4>
        <ul>
        {projectItems}
        </ul>

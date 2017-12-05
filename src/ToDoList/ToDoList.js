@@ -22,6 +22,7 @@ export default class ToDoList extends Component {
             items: [...this.state.items, this.state.term]
         });
         }
+        
   render() {
     return (
       <div >

@@ -111,9 +111,15 @@
 
 }
 @media only screen and (max-width: 2600px){
+  body{
+    background: #114357; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #114357, #f29492); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #114357, #f29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Bellefair', serif;
+  }
   .tgame-info{
     display:inline-block;
-    border: 12px rgb(143, 143, 240) outset;
+    border: 12px #114357 outset;
     min-height: 100px;
     float:right;
     margin-right:1%; 
@@ -122,6 +128,9 @@
   }
   .tgame-info button{
     font-size: 60px;
+    background: #6d6027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6d6027, #d3cbb8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6d6027, #d3cbb8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
 
@@ -134,8 +143,9 @@
     min-height: 150px;
     min-width: 150px;
     float:left;
-    background: rgb(240, 204, 237);
+    background: #f3abaa;
     font-size: 60px;
+    font-family: 'Merriweather', serif;
     
  
   }
@@ -152,5 +162,9 @@
   
   .tstatus {
     margin-bottom: 10px;
+  }
+  .tgame h1{
+    color: rgb(204, 201, 201);
+    font-family: 'Bellefair', serif;
   }
 }

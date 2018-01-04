@@ -69,6 +69,7 @@ class TickTackToe extends Component {
     
         return (
           <div className="tgame">
+          <h1>Tic Tac Toe</h1>
             <div className="tgame-board">
               <Board
                 squares={current.squares}
